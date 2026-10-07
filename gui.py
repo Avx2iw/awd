@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+from sort import sorts
 
 root = Tk()
 root.title("Searching and Sorting Algorithms")

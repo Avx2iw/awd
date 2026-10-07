@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 
+
 root = Tk()
 root.title("Searching and Sorting Algorithms")
 root.geometry("400x300")

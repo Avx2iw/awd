@@ -1,15 +1,14 @@
 #TESTING
 import random
 dataset = []
-for i in range(1,10):
+for i in range(0,10):
     dataset.append(random.randint(1,10))
 print(dataset)
 target = 5
 #TESTING
 
 class search() :
-
-    #Linear search
+    #|Linear search|
     def linear(array, target):
         global count
         global pos
@@ -26,6 +25,10 @@ class search() :
             pos.append('None')
         print(*pos, sep=",")
         print(count)
+    
+    #|Binary search|
+    def binary(array, target):
+
                 
 
 

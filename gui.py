@@ -1,15 +1,13 @@
-from tkinter import *
-from tkinter import ttk
+from search import search
 from sort import sorts
+import tkinter as tk
 
-root = Tk()
+root = tk.Tk()
 root.title("Searching and Sorting Algorithms")
-root.geometry("400x300")
-frm = ttk.Frame(root, relief=ttk.Style(SOLID), borderwidth=5)
-frm.pack(fill="both", expand=True, padx=10, pady=10)
+root.geometry("800x700")
+frm = tk.Canvas(root, bg="grey", width=800, height=700)
+frm.pack(fill="both", expand=True)
 
-
-name = ttk.Label(frm , text="Searching and Sorting Algorithms")
-
+name = tk.Label(frm , text="Searching and Sorting Algorithms", font=("aerial", 30), background="red")
 
 root.mainloop()

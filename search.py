@@ -23,16 +23,15 @@ class search() :
                 return
         if pos == []:
             pos.append('None')
-        print(*pos, sep=",")
-        print(count)
+        return ("target = " + str(target) + "\npositions = " + str(pos) + "\ncount = " + str(count))
     
     #|Binary search|
     def binary(array, target):
-
+        print("HelloWrld")
                 
 
 
 
 #TESTING
-search.linear(dataset, target)
+print(search.linear(dataset, target))
 #TESTING

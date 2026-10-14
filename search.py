@@ -28,7 +28,7 @@ class search() :
     
     #|Binary search|
     def binary(array, target):
-
+        print("UwU")
                 
 
 

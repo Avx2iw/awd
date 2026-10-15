@@ -35,7 +35,7 @@ class sorts() :
             left = [element for element in set if element < pivot]
             middle = [element for element in set if element == pivot]
             right = [element for element in set if element > pivot]
-            return quicksort(left) + middle + quicksort(right)
+            return sorts.quicksort(left) + middle + sorts.quicksort(right)
 
 sorts.quicksort(Data_Set)
 print(Data_Set)

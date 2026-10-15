@@ -1,3 +1,5 @@
 # awd
 
-Vlad: used AI to find out how to run flet on school computers
+Vlad: Gui
+Riley: Sorts
+Thomas: Searches

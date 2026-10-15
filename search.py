@@ -27,11 +27,20 @@ class search() :
     
     #|Binary search|
     def binary(array, target):
-        print("HelloWrld")
-                
-
-
+        global lower
+        global upper
+        lower = 0
+        upper = len(array) - 1
+        while lower <= upper:
+            mid = (upper + lower) // 2
+            if array[mid] < target:
+                lower = mid + 1
+            elif array[mid] > target:
+                upper = mid - 1
+            else:
+                return mid
+        return -1
 
 #TESTING
-print(search.linear(dataset, target))
+print(search.binary(dataset, target))
 #TESTING

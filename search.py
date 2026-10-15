@@ -27,11 +27,29 @@ class search() :
     
     #|Binary search|
     def binary(array, target):
-        print("HelloWrld")
-                
-
-
+        arraysorted = sorted(array)
+        global lower
+        global upper
+        global count
+        global k
+        lower = 0
+        upper = len(arraysorted) - 1
+        count = arraysorted.count(target)
+        k = 0
+        pos = []
+        while k < count:
+            while lower <= upper:
+                mid = (upper + lower) // 2
+                if arraysorted[mid] < target:
+                    lower = mid + 1
+                elif arraysorted[mid] > target:
+                    upper = mid - 1
+                else:
+                    pos.append(mid)
+                    k = k + 1
+                    upper = mid - 1
+        return ("sorted array = " + str(arraysorted) + "\npositions = " + str(pos) + "\ncount = " + str(count))
 
 #TESTING
-print(search.linear(dataset, target))
+print(search.binary(dataset, target))
 #TESTING

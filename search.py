@@ -39,7 +39,6 @@ class search() :
                 upper = mid - 1
             else:
                 return mid
-        return -1
 
 #TESTING
 print(search.binary(dataset, target))

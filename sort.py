@@ -1,8 +1,3 @@
-import random
-Data_Set = []
-for _ in range(1,10) :
-    Data_Set.append(random.randint(1,10))
-print(Data_Set)
 
 class sorts() :
     #bubble sort
@@ -37,5 +32,16 @@ class sorts() :
             right = [element for element in set if element > pivot]
             return sorts.quicksort(left) + middle + sorts.quicksort(right)
 
-sorts.quicksort(Data_Set)
-print(Data_Set)
+    #pancake sort
+
+    def Pancake_sort(nums):
+        highest,found=0,[]
+        for i in range(len(nums)):
+            highest=0
+            for j in range(len(nums)):
+                if nums[j]>nums[highest] and nums[j] not in found:
+                    highest=j
+            found.append(nums[highest])
+            nums[:highest+1]=nums[:highest+1][::-1]
+            nums[:len(nums)-i]=nums[:(len(nums)-i)][::-1]
+        print(nums)

@@ -1,11 +1,3 @@
-#TESTING
-import random
-dataset = []
-for i in range(0,10):
-    dataset.append(random.randint(1,10))
-print(dataset)
-target = 5
-#TESTING
 
 class search() :
     #|Linear search|
@@ -49,7 +41,3 @@ class search() :
                     k = k + 1
                     upper = mid - 1
         return ("sorted array = " + str(arraysorted) + "\npositions = " + str(pos) + "\ncount = " + str(count))
-
-#TESTING
-print(search.binary(dataset, target))
-#TESTING
